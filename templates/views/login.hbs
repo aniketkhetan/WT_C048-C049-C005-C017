@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>header}}
+    <link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+	
+</head>
+<body>
+    <div class="container-fluid">
+                <a href="/index" class="navbar-brand">Pizza <span>Express</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+     <h4 class="text-center mt-4 mb-4" style="text-transform: uppercase;">Login</h4>
+    <form action="/login" method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-12"> <label for="inputName">Your Username</label> <input type="text" class="form-control" id="inputEmail4" placeholder="Enter your username" required="" name="email"> </div>
+                        <div class="form-group col-md-12"> <label for="inputName">Your Password</label> <input type="password" class="form-control" id="inputPassword4" placeholder="Enter your password" required="" name="password"> </div>
+                        <div class="form-group col-md-12">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="custom-checkbox d-block"> <label class="custom-control custom-checkbox checkbox-lg"> <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <div class="custom-control-label" for="customCheck1">Remember Password</div>
+                                    </label> </div> <a href="#" target="_blank">Forgot Password?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="custom-checkbox d-block"> <a href="/register" class="nav-link-inline font-size-sm">Don't have an account?Click here to register for free!</a> </div>
+                        </div>
+
+                         <div class="custom-checkbox d-block"> <a href="/menulogin" class="nav-link-inline font-size-sm">Just want to take a sneak peek of our menu?Click here to view! </a> </div>
+                    <div class="mt-2 mb-3"> <button class="btn btn-primary full-width" type="submit">Login</button> </div>
+    </form>
+                
+            </div>
+</body>
+</html>

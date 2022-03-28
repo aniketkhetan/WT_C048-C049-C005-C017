@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+	{{>header}}
+</head>
+
+<body>
+	
+	
+                
+            
+                <h4 class="text-center mt-4 mb-4" style="text-transform: uppercase;">Register</h4>
+                <form action="/register" method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-12"> <label for="inputName">Your Name</label> <input type="text" class="form-control" id="inputEmail4" placeholder="Enter your name" required="" name="fullname"> </div>
+                        <div class="form-group col-md-12"> <label for="inputName">Your Username</label> <input type="text" class="form-control" id="inputPassword4" placeholder="Enter your username" required="" name="username"> </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12"> <label for="inputName">Your Email Address</label> <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your email address" required="" name="email"> </div>
+                        <div class="form-group col-md-12">  <label for="comments"> Address:</label>
+                                <textarea class="form-control" type="textarea" name="address" id="address" placeholder="Address" maxlength="6000" rows="7"></textarea>
+                            </div> 
+                    </div>
+                    <div class="form-row">
+                         <div class="form-group col-md-12"> <label for="inputName">Your Password</label> <input type="password" class="form-control" id="inputPassword4" placeholder="Enter your password" required="" name="password"> </div>
+                        <div class="form-group col-md-12"> <label for="inputName">Your Confirm Password</label> <input type="password" class="form-control" id="inputPassword4" placeholder="Enter your confirm password" required="" name="cpassword"> </div>
+                        
+                    </div>
+                    <div class="form-group form-row mt-2"> <label class="col-md-2 col-form-label user_group">Gender:</label>
+                        <div class="col-md-10 pt-1">
+                            <div class="form-check form-check-inline"> <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="option1"> <label class="form-check-label" for="inlineRadio1">Male</label> </div>
+                            <div class="form-check form-check-inline"> <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="option2"> <label class="form-check-label" for="inlineRadio2">Female</label> </div>
+                            <div class="form-check form-check-inline"> <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="option2"> <label class="form-check-label" for="inlineRadio2">Other</label> </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-row">
+                        <div class="col-md-12"> <label class="custom-control custom-checkbox checkbox-lg"> <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <div class="custom-control-label" for="customCheck1">I agree with <a href="#" target="_blank">terms and conditions</a></div>
+                            </label> </div>
+                    </div>
+                    <hr class="mt-3 mb-4">
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="custom-checkbox d-block"> <a href="/login" class="nav-link-inline font-size-sm">Already have an account? Login</a> </div> <input type="submit" class="btnRegister" value="Register" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+	
+
+</body>
+
+</html>
